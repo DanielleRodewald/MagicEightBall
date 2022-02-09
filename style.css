@@ -2,6 +2,15 @@
     font-family: "entanglement";
     src: url("fontsandimages/Entanglement.ttf");
 }
+@font-face {
+    font-family: "bandar";
+    src: url("fontsandimages/Bandar.otf");
+}
+@font-face {
+    font-family: "arrows";
+    src: url("fontsandimages/arrows.ttf");
+}
+
 body {
     background-image: url("fontsandimages/sunset-gradient.jpg"); background-size: cover;
 }
@@ -41,20 +50,49 @@ body {
     margin-left: 800px;
     margin-top: -320px;
 }
-input, button {
+input {
     padding: 10px;
-    border: 5px rgb(160, 71, 71) groove;
+    border: 5px rgb(179, 28, 121) groove;
     font-family: "entanglement";
+    font-weight: 800px;
 }
+
+button {
+    padding: 10px;
+    border-radius: 50%;
+    border: #000 solid 2px;
+    background: radial-gradient(circle at 100%, #ca1717, rgb(243, 221, 99));
+    background-color: rgb(173, 101, 96); font-family: "arrows";
+
+margin-left: 10px;
+font-size: 25px;}
 #answer {
-    border: 5px rgb(160, 71, 71) groove;
     width:400px;
+    height: 40px;
     padding: 15px;
-    margin-left: 800px;
-    margin-top: 20px;
+    margin-left: 750px;
+    margin-top: 30px;
     background-color: aliceblue;
-    font-family: "entanglement";
+    font-family: "bandar";
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    border-radius: 25px;
 }
+
+.triangle:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid aliceblue;
+    border-top: 15px solid aliceblue;
+    border-bottom: 15px solid transparent;
+    left: -25px;
+    top: 18px;
+    border-radius: 6px;
+  }
 
 .clickMe {
     transition-property: transform;
