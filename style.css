@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "entanglement";
+    src: url("fontsandimages/Entanglement.ttf");
+}
+body {
+    background-image: url("fontsandimages/sunset-gradient.jpg"); background-size: cover;
+}
+
+/* eightball design */
+
+#eightball {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 150px;
+    background: radial-gradient(circle at 100px 100px, #6e7c8d, #000);
+}
+
+#whiteCircle {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    transform: translate(120px, 120px);
+    background: radial-gradient(circle at 50px 80px, white, rgb(85, 84, 84));
+}
+
+#numberEight {
+    font-size: 180px;
+    font-weight: 800;
+    color: black;
+    transform: translate(80px, 0px);
+}
+
+/* eightball design end*/
+
+.output {
+    margin-left: 800px;
+    margin-top: -320px;
+}
+input, button {
+    padding: 10px;
+    border: 5px rgb(160, 71, 71) groove;
+    font-family: "entanglement";
+}
+#answer {
+    border: 5px rgb(160, 71, 71) groove;
+    width:400px;
+    padding: 15px;
+    margin-left: 800px;
+    margin-top: 20px;
+    background-color: aliceblue;
+    font-family: "entanglement";
+}
+
+.clickMe {
+    transition-property: transform;
+    transition-duration: 2s;    
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    transform:rotate3d(1, 1, 1, 360deg);
+}
+
